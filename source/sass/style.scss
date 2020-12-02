@@ -1,0 +1,17 @@
+// LIBRARY
+@import "libs/normalize.scss";
+
+// BASICS
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+@import "btn.scss";
+
+// BLOCKS
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/slider.scss";
+@import "blocks/popular.scss";
+@import "blocks/brand.scss";
+@import "blocks/footer.scss";

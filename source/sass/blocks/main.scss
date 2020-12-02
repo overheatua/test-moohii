@@ -1,0 +1,29 @@
+.main {
+  border-top: 1px solid #C4C4C4;
+  background: #F9F9F9;
+}
+
+.up-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  border: 1px solid #828282;
+  top: calc(50% - 25px);
+  right: 60px;
+  background: url("../img/arrow-up.svg") no-repeat center;
+  transition: all .3s;
+
+  &:hover {
+    background-color: #e5e5e55b;
+    border: 1px solid #FC104F;
+  }
+}
+
+@media (min-width: $mobile-width-only) {
+  .up-btn {
+    display: block;
+  }
+}

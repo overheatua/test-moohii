@@ -1,0 +1,39 @@
+.btn {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 0;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #FC104F;
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  background: #F94877;
+}
+
+.btn-secondary {
+  background: #FFFFFF;
+  color: #000000;
+  border: 1px solid #F94877;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #FFFFFF;
+    border: 1px solid #FC104F;
+    color: #FC104F;
+    text-decoration: none;
+  }
+}

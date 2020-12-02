@@ -1,0 +1,103 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000000;
+  font-family: $font;
+  background: #FFFFFF;
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: #828282;
+    text-decoration: none;
+  }
+}
+
+
+h2 {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 24px;
+  color: #222222;
+  margin: 0;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) bottom center no-repeat;
+  background-size: 100% 1px;
+}
+
+ul {
+  @include list-reset;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+// -----------------------------------------------------BOOTSTRAP----------------------------------------------------------
+
+
+.container {
+  max-width: 1680px;
+  padding: 0 16px;
+
+  @media (min-width: $desktop) {
+    padding: 0 32px;
+  }
+}
